@@ -1,5 +1,7 @@
 #! /bin/bash
 
+docker login -u marvinisaac -p GITHUB_TOKEN docker.pkg.github.com
+
 version=0.0.0
 timestamp=$(date +%s)
 tag=docker.pkg.github.com/marvinisaac/php/php-7.4:$version-$timestamp
