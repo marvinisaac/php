@@ -1,6 +1,6 @@
 #! /bin/bash
 
-docker login -u marvinisaac -p GITHUB_TOKEN docker.pkg.github.com
+docker login -u marvinisaac -p $BUILD_SECRET docker.pkg.github.com
 
 version=0.0.0
 timestamp=$(date +%s)
